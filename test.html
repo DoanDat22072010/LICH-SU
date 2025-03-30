@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngã Ba Giồng & Địa Đạo Củ Chi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f0e1;
+            color: #5a3e1b;
+            font-family: 'Crimson Text', serif;
+        }
+        .navbar, footer {
+            background-color: #6d4c41;
+        }
+        .navbar a, footer p {
+            color: #fce8c3;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?vietnam,history') no-repeat center;
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            border-bottom: 8px solid #8b5a2b;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+        .fixed-img {
+            height: 250px;
+            object-fit: cover;
+        }
+        .img-frame {
+            border: 8px solid #8b5a2b;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+            padding: 5px;
+            background: #f5f0e1;
+        }
+        h2 a {
+            text-decoration: none;
+            color: #5a3e1b;
+            transition: color 0.3s ease-in-out;
+        }
+        h2 a:hover {
+            color: #b45f06;
+        }
+        .subtitle {
+            font-style: italic;
+            color: #8b5a2b;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            padding: 20px 0;
+            text-align: center;
+            border-top: 4px solid #8b5a2b;
+        }
+        .footer-icons a {
+            color: #fce8c3;
+            margin: 0 10px;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+        .footer-icons a:hover {
+            color: #b45f06;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">📜 Lịch Sử Việt Nam</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Trang Chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nga-ba-giong.html">Ngã Ba Giồng</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dia-dao-cu-chi.html">Địa Đạo Củ Chi</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="hero">
+        <h1>Ngã Ba Giồng & Địa Đạo Củ Chi</h1>
+    </div>
+    
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2><a href="nga-ba-giong.html">Ngã Ba Giồng</a></h2>
+                <p class="subtitle">Di tích lịch sử quan trọng, nơi chứng kiến nhiều cuộc đấu tranh anh dũng.</p>
+                <img src="https://phunuhocmon.org.vn/uploads/images/news/dc8fde9e-4d5e-41c2-be94-60314d81d6e8.jpg" class="img-fluid img-frame" alt="Ngã Ba Giồng">
+            </div>
+            <div class="col-md-6">
+                <h2><a href="dia-dao-cu-chi.html">Địa Đạo Củ Chi</a></h2>
+                <p class="subtitle">Hệ thống hầm ngầm độc đáo, đóng vai trò quan trọng trong kháng chiến.</p>
+                <img src="https://source.unsplash.com/600x400/?tunnel,history" class="img-fluid img-frame" alt="Địa Đạo Củ Chi">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; <span id="year"></span> Lịch Sử Việt Nam | Thiết kế bởi Doãn Đạt</p>
+        <div class="footer-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

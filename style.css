@@ -1,0 +1,55 @@
+.card-img-top {
+    height: 200px; /* Đặt chiều cao cố định */
+    object-fit: cover; /* Giữ tỷ lệ ảnh và cắt phần dư nếu cần */
+    width: 100%; /* Đảm bảo ảnh phủ đầy thẻ */
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.nav-link {
+    transition: color 0.3s ease-in-out;
+}
+.nav-link:hover {
+    color: #f8c102 !important;
+}
+.card img {
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover img {
+    transform: scale(1.05);
+}
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://source.unsplash.com/1600x900/?vietnam') no-repeat center;
+    background-size: cover;
+}
+body {
+    font-family: 'Times New Roman', serif;
+    background: url('https://www.toptal.com/designers/subtlepatterns/uploads/old_map.png');
+    color: #3a1f0b; /* Màu chữ đậm hơn */
+    font-size: 18px; /* Tăng kích thước chữ */
+    line-height: 1.6; /* Làm cho chữ dễ đọc hơn */
+}
+
+h1, h2 {
+    font-family: 'Roboto Slab', serif;
+    color: #8b0000;
+    font-size: 30px; /* Làm tiêu đề lớn hơn */
+    font-weight: bold; /* Đậm hơn */
+}
+
+p {
+    font-size: 20px; /* Làm đoạn văn lớn hơn */
+    font-weight: 500; /* Giúp chữ rõ hơn */
+}
+
+.navbar-brand {
+    font-size: 1.8rem; /* Làm logo chữ lớn hơn */
+}
+
+.card p {
+    font-size: 18px; /* Làm chữ trong thẻ card rõ hơn */
+}
