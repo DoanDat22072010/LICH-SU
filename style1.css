@@ -1,0 +1,110 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background: url('https://www.toptal.com/designers/subtlepatterns/uploads/old_map.png');
+    color: #5c4033;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #8b5a2b;
+}
+
+.navbar-brand, .nav-link {
+    color: #f5deb3 !important;
+}
+
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?ancient,vietnam') no-repeat center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.card {
+    background-color: #f5deb3;
+    border: 2px solid #8b5a2b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.card img {
+    max-height: 250px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.container .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;  /* Tăng khoảng cách giữa các card */
+    justify-content: space-between;
+}
+
+.container .col {
+    flex: 1 1 calc(50% - 2rem); /* 2 columns per row, với chiều rộng lớn hơn */
+    max-width: calc(50% - 2rem); /* Điều chỉnh để mỗi card rộng hơn */
+}
+
+.card {
+    background-color: #f5deb3;
+    border: 2px solid #8b5a2b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;  /* Đảm bảo card vẫn giữ chiều cao tối ưu */
+    margin-bottom: 1.5rem;
+    padding: 1rem;  /* Tăng padding để tạo không gian trong card */
+}
+
+.card img {
+    max-height: 300px;  /* Tăng chiều cao của hình ảnh */
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.card h2 {
+    font-size: 1.5rem;  /* Tăng kích thước tiêu đề */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1.2rem;  /* Tăng kích thước văn bản mô tả */
+    margin-bottom: 1rem;
+}
+
+
+
+.footer {
+    background-color: #8b5a2b;
+    color: #f5deb3;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo-bottom-right {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    height: auto;
+}

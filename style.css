@@ -1,55 +1,112 @@
+/* Ảnh trong card */
 .card-img-top {
-    height: 200px; /* Đặt chiều cao cố định */
-    object-fit: cover; /* Giữ tỷ lệ ảnh và cắt phần dư nếu cần */
-    width: 100%; /* Đảm bảo ảnh phủ đầy thẻ */
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
 }
+
+/* Container cho video (Giữ tỷ lệ 16:9) */
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
 }
+
+/* Hiệu ứng chuyển màu cho nav-link */
 .nav-link {
     transition: color 0.3s ease-in-out;
 }
+
 .nav-link:hover {
     color: #f8c102 !important;
 }
+
+/* Hiệu ứng thu phóng cho ảnh trong card */
 .card img {
     transition: transform 0.3s ease-in-out;
 }
+
 .card:hover img {
     transform: scale(1.05);
 }
+
+/* Phần Hero Section */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('https://source.unsplash.com/1600x900/?vietnam') no-repeat center;
+                url('https://source.unsplash.com/1600x900/?vietnam') no-repeat center center;
     background-size: cover;
+    height: 100vh; /* Đảm bảo hero section chiếm toàn bộ chiều cao màn hình */
 }
+
+/* Cấu hình body */
 body {
     font-family: 'Times New Roman', serif;
     background: url('https://www.toptal.com/designers/subtlepatterns/uploads/old_map.png');
-    color: #3a1f0b; /* Màu chữ đậm hơn */
-    font-size: 18px; /* Tăng kích thước chữ */
-    line-height: 1.6; /* Làm cho chữ dễ đọc hơn */
+    background-size: cover;
+    color: #3a1f0b;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0; /* Loại bỏ margin mặc định */
 }
 
+/* Tiêu đề chính và phụ */
 h1, h2 {
     font-family: 'Roboto Slab', serif;
     color: #8b0000;
-    font-size: 30px; /* Làm tiêu đề lớn hơn */
-    font-weight: bold; /* Đậm hơn */
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Thêm khoảng cách dưới tiêu đề */
 }
 
+/* Đoạn văn */
 p {
-    font-size: 20px; /* Làm đoạn văn lớn hơn */
-    font-weight: 500; /* Giúp chữ rõ hơn */
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px; /* Thêm khoảng cách dưới đoạn văn */
 }
 
+/* Navbar */
 .navbar-brand {
-    font-size: 1.8rem; /* Làm logo chữ lớn hơn */
+    font-size: 1.8rem;
+    font-weight: bold; /* Làm logo rõ hơn */
 }
 
+/* Chữ trong card */
 .card p {
-    font-size: 18px; /* Làm chữ trong thẻ card rõ hơn */
+    font-size: 18px;
+    font-weight: 500;
+    color: #5c4033;
 }
+
+/* Tối ưu link trong card */
+.card h2 a {
+    text-decoration: none;
+    color: #5c4033;
+    font-weight: bold;
+}
+
+.card h2 a:hover {
+    color: #8b5a2b; /* Màu khi hover vào link */
+}
+
+/* Các lớp cho element có hiệu ứng hover */
+.card, .nav-link {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Tối ưu cho hình ảnh khi load */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    background-color: #6b4226;  /* Sets the background color to a rich brown */
+    color: white;               /* Sets the text color to white */
+    padding: 15px;              /* Adds 15px of padding inside the footer */
+    width: 100%;                /* Ensures the footer spans the full width */            
+    text-align: center;         /* Centers the text inside the footer */
+}
+
+
